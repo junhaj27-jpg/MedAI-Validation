@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+db.sqlite3
+media/*
+!media/.gitkeep
+*.nii
+*.nii.gz
+*.dcm
+*.pt
+*.pth
+*.onnx
+generated_reports/*
+!generated_reports/.gitkeep
+
