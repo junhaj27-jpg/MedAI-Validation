@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block content %}<div class="d-flex justify-content-between"><h1>의료영상 프로젝트</h1><a class="btn btn-primary" href="{% url 'project_create' %}">프로젝트 생성</a></div><div class="row mt-3">{% for p in projects %}<div class="col-md-4"><a class="card card-body mb-3 text-decoration-none" href="{% url 'project_detail' p.pk %}"><h2 class="h5">{{ p.name }}</h2><span>영상 {{ p.images.count }}건 · {{ p.created_at|date:'Y-m-d' }}</span></a></div>{% empty %}<p>등록된 프로젝트가 없습니다.</p>{% endfor %}</div>{% endblock %}
+

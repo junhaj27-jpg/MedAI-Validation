@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block content %}<div class="row justify-content-center"><div class="col-md-5 card p-4"><h1 class="h3">로그인</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary w-100">로그인</button></form></div></div>{% endblock %}
+
